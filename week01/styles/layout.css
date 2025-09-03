@@ -1,0 +1,54 @@
+* {
+    /*background-color: grey;*/
+    font: arial;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header, h1 {
+    background-color: rgb(73, 71, 71);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 100px;
+    margin-left: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(23, 23, 23);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: grey;
+}
+
+p {
+    background-color: grey;
+    font-size: xx-large;
+    padding-bottom: 200px;
+    margin-left: 10px;
+}
+
+aside {
+    font-size: xx-large;
+    padding-top: 25px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+footer {
+     background-color: rgb(73, 71, 71);
+     padding-bottom: 200px;
+     text-align: center;
+     color: white;
+     font-size: large;
+}
