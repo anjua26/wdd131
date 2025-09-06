@@ -1,0 +1,125 @@
+:root {
+    --base-color: #0576B3;
+    --secondary-color: #A39A92;
+    --base-font: "Old Standard TT", serif;
+}
+
+.old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--base-font);
+    font-size: xx-large;
+    text-align: center;
+    background-color: var(--base-color);
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-size: x-large;
+    padding: 1px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: left;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+h2 {
+    grid-column: 1/3;
+    background-color: var(--base-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+    vertical-align: top;
+    color: rgb(239, 238, 238);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#card-2 {
+    max-height: 28px;
+}
+
+.flag {
+    max-width: 250px;
+    max-height: 250px;
+    padding-left: 25px;
+}
+
+section li {
+    text-align: left;
+    padding-left: 20px;
+    padding: 5px;
+    font-size: large;
+    min-width: 200px;
+}
+
+section p {
+    font-size: large;
+    padding: 5px
+}
+
+section img {
+    border-radius: 10px;
+    padding: 5px
+}
+
+footer {
+    background-color: var(--base-color);
+    font-size: larger;
+    text-align: center;
+    padding: 2px;
+    color: rgb(239, 238, 238);
+}
