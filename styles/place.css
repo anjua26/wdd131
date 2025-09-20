@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --background-color-1: rgb(164, 2, 2);
+    --background-color-2: navy;
+}
+
+h1 {
+    background-color: var(--background-color-1);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.main-image {
+    margin: 0 auto;
+}
+
+.cover {
+    object-fit: cover;
+    max-width: fit-content;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 5px;
+}
+
+.label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+ul {
+    list-style: none;
+    font-size: large;
+}
+
+.data-box {
+    position: relative;
+    padding: 1rem;
+}
+
+.weather-box {
+    position: relative;
+    padding: 1rem;
+}
+
+.weather-symbol {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--background-color-1);
+    font-size: larger;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(239, 238, 238);
+}
+
+@media screen and (min-width: 800px) {
+    .main-image {
+        position: relative;
+
+    }
+
+    .hero {
+        top: 50%;
+        transform: translateY(0%);
+        transform: translateX(0%);
+        position: absolute;
+    }
+
+    .weather::after {
+        content: "⛅"
+    }
+
+    .weather-symbol {
+        display: none;
+    }
+
+    .data-box {
+        float: left;
+        margin-top: 25px;
+        margin-left: 50px;
+        background-color: rgb(209, 209, 209);
+    }
+
+    .weather-box {
+        float: right;
+        margin-right: 50px;
+        margin-top: 525px;
+        background-color: rgb(209, 209, 209);
+    }
+
+    h2 {
+        background-color: var(--background-color-2);
+        color: white;
+        padding: 10px;
+        font-size: xx-large;
+    }
+
+    ul {
+        padding: 1rem;
+    }
+
+    footer {
+        z-index: 100;
+        margin-top: 100px;
+        bottom: 0;
+        padding: 1.5rem;
+        padding-bottom: 5rem;;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        /* Remove default body margin */
+    }
+
+    main {
+        flex-grow: 1;
+    }
+}

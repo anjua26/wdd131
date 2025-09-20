@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona Country Page</title>
+    <meta name="description" content="A page giving facts and images about Arizona.">
+    <meta name="author" content="Aidan Hansen">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <heading>
+        <h1>Arizona</h1>
+    </heading>
+    <main>
+        <div class="main-image">
+            <picture class="hero">
+                <source srcset="images/arizona-hero-large.webp" media="(min-width: 800px)">
+                <img class="cover" srcset="images/arizona-hero-small.webp" alt="Arizona Landscape">
+            </picture>
+        </div>
+        <div class="data-box">
+            <h2>Data</h2>
+            <ul class="data">
+                <li class="label">Area: </li>
+                <li>113,998 mi²</li>
+                <li class="label">Population: </li>
+                <li>7.582 million</li>
+                <li class="label">Capital: </li>
+                <li>Phoenix</li>
+                <li class="label">Languages: </li>
+                <li>English, Spanish, Navajo</li>
+                <li class="label">Currency: </li>
+                <li>US Dollar</li>
+                <li class="label">Time Zone: </li>
+                <li>GMT-7</li>
+                <li class="label">Calling Code: </li>
+                <li>+1</li>
+                <li class="label">Internet TLD: </li>
+                <li>.us</li>
+            </ul>
+        </div>
+        <div class="weather-box">
+            <h2 class="weather">Weather</h2>
+            <img class="weather-symbol" src="images/weather_symbol.svg" alt="Weather Symbol">
+            <ul class="data">
+                <li class="label">Temperature:</li>
+                <li>90°F</li>
+                <li class="label">Conditions:</li>
+                <li>Sunny</li>
+                <li class="label">Wind:</li>
+                <li>2mph</li>
+                <li class="label">Windchill:</li>
+                <li id="windChill"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="year"></span>|Aidan Hansen|Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
