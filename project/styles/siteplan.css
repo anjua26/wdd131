@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    font-family: "Literata", "Source Serif 4" , serif;
+}
+
+:root {
+    --base-color: rgb(220, 0, 0);
+    --secondary-color: rgb(60, 216, 240);
+    --font-family-main: "Source Serif 4";
+    --font-family-secondary: "Literata";
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--base-color);
+    padding: 10px;
+    font-family: var(--font-family-main);
+}
+
+h2 {
+    font-family: var(--font-family-secondary);
+}
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    padding-left: 200px;
+}
+
+img {
+    max-width: 500px;
+}
+
+.box {
+    border: solid 1px grey;
+    background-color: aqua;
+    padding: 25px;
+    padding-bottom: 10px;
+    max-width: 450px;
+    margin-top: 10px;
+}
+
+.logo {
+    text-align: right;
+}
+
+.main-logo {
+    max-width: 125px;
+    position: absolute;
+}
+
+.colors1 {
+    color: var(--base-color);
+    font-size: x-large;
+}
+
+.colors2 {
+    color: var(--secondary-color);
+    font-size: x-large;
+}
