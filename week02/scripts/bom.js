@@ -14,7 +14,7 @@ button.addEventListener('click', function () {
         deleteButton.textContent = '❌';
         li.append(deleteButton);
         list.append(li);
-    
+
 
         deleteButton.addEventListener('click', function () {
             list.removeChild(li);
@@ -26,7 +26,7 @@ button.addEventListener('click', function () {
     }
 });
 
- deleteButton.addEventListener('click', function () {
-        list.removeChild(li);
-        input.focus();
-    });
+deleteButton.addEventListener('click', function () {
+    list.removeChild(li);
+    input.focus();
+});
