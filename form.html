@@ -8,6 +8,9 @@
     <meta name="description" content="A product review form for the WDD131 Class.">
     <meta name="author" content="Aidan Hansen">
     <link rel="stylesheet" href="styles/form.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
     <script defer src="scripts/form.js"></script>
 </head>
 
@@ -23,24 +26,23 @@
                         <option value="" disabled selected>Select a Product...</option>
                     </select>
                 </label>
-                <label>Overall Rating:
-                    <div class="star-rating">
-                        <input type="radio" name="stars" id="star-a" value="5" required />
-                        <label for="star-a"></label>
+                <label for="star-a">Overall Rating:</label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required >
+                    <label for="star-a"></label>
 
-                        <input type="radio" name="stars" id="star-b" value="4" required />
-                        <label for="star-b"></label>
+                    <input type="radio" name="stars" id="star-b" value="4" required >
+                    <label for="star-b"></label>
 
-                        <input type="radio" name="stars" id="star-c" value="3" required />
-                        <label for="star-c"></label>
+                    <input type="radio" name="stars" id="star-c" value="3" required >
+                    <label for="star-c"></label>
 
-                        <input type="radio" name="stars" id="star-d" value="2" required />
-                        <label for="star-d"></label>
+                    <input type="radio" name="stars" id="star-d" value="2" required >
+                    <label for="star-d"></label>
 
-                        <input type="radio" name="stars" id="star-e" value="1" required />
-                        <label for="star-e"></label>
-                    </div>
-                </label>
+                    <input type="radio" name="stars" id="star-e" value="1" required >
+                    <label for="star-e"></label>
+                </div>
                 <label>Date of Installation:
                     <input type="date" id="Installation" name="Date of Installation" required>
                 </label>
@@ -60,8 +62,8 @@
     </main>
     <footer>
         <div>
-        <p>©️<span id="year"></span>|Aidan Hansen|Arizona</p>
-        <p id="lastModified"></p>
+            <p>©️<span id="year"></span>|Aidan Hansen|Arizona</p>
+            <p id="lastModified"></p>
         </div>
     </footer>
 </body>
