@@ -103,8 +103,8 @@ header h1 {
 .wf1 input[type="email"],
 .wf1 input[type="date"],
 .wf1 select,
-.wf1 input[type="number"]{
-    background-color: #fffeee; 
+.wf1 input[type="number"] {
+    background-color: #fffeee;
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
@@ -115,7 +115,7 @@ header h1 {
     appearance: none;
 }
 
-.wf1 textarea{
+.wf1 textarea {
     background-color: #fffeee;
     width: 100%;
     max-width: 400px;
@@ -126,7 +126,7 @@ header h1 {
     padding: 5px
 }
 
-.wf1 input[type="submit"]{
+.wf1 input[type="submit"] {
     border: none;
     border-radius: 6px;
     background-color: #04b1eb;
@@ -138,7 +138,7 @@ header h1 {
     font-size: large;
 }
 
-.wf1 input[type="submit"]:hover{
+.wf1 input[type="submit"]:hover {
     background-color: rgb(1, 175, 1);
 }
 
