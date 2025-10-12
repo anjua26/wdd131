@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Mountain Llama and Alpaca Petting Zoo - Contact Info</title>
+    <meta name="description" content="The contact info page for the Red Mountain Llama and Alpaca Petting Zoo webpage.">
+    <meta name="author" content="Aidan Hansen">
+    <link rel="stylesheet" href="styles/llama-base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/llama-base.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button type="button" id="menu">|</button>
+            <ul class="navigation">
+                <li><a href="llama-index.html">Homepage</a></li>
+                <li><a href="llama-gallery.html">Photo Gallery</a></li>
+                <li><a href="llama-contact.html">Contact Info</a></li>
+                <li><img class="img-logo" src="images/llama-logo.svg" alt="Llama logo"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" class="wf1">
+            <div class="form">
+                <h1>Contact Us!</h1>
+                <fieldset>
+                    <label>Your Name*<input type="text" id="name" name="name" required></label>
+                    <label>Phone Number<input type="tel" id="phone" name="phone" placeholder="1233443435"></label>
+                    <label>Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Comments, Questions, Concerns<textarea id="comments"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Contact Us!">
+            </div>
+            <div class="contact-us">
+                <h1>Where to find Us!</h1>
+                <h2>Address: 466 E Mountain St</h2>
+                <h2>Phone Number: (555) 456-1111</h2>
+                <h2>Open from 7am to 5pm</h2>
+                <h2>Tuesday through Saturday!</h2>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="year"></span>|Aidan Hansen|Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

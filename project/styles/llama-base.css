@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Literata", "Source Serif 4", serif;
+}
+
+:root {
+    --base-color: rgb(172, 0, 0);
+    --secondary-color: rgb(60, 216, 240);
+    --font-family-main: "Source Serif 4";
+    --font-family-secondary: "Literata";
+}
+
+header {
+    background-color: var(--base-color);
+    display: grid;
+    color: white;
+    grid-gap: 1rem;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 0 10px #333;
+}
+
+.navigation {
+    font-size: 30px;
+    background-color: var(--base-color);
+}
+
+nav a {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--base-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    color: white;
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+
+@media (max-width: 739px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: none;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .open .img-logo {
+        display: none;
+    }
+
+    .img1, .img2 {
+    max-width: 200px;
+    padding: 0 25px 0 25px;
+    }
+
+    form {
+        display: block;
+    }
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.img-logo {
+    max-width: 150px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .img-logo {
+        padding-left: 150px;
+    }
+
+    .img1, .img2 {
+    max-width: 400px;
+    padding: 0 25px 0 25px;
+    }
+    form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+.main-logo {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#left-arrow,
+#right-arrow {
+    font-size: 55px;
+    color: var(--secondary-color);
+    background-color: white;
+    border: white;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+}
+
+
+.about-us {
+    border: black solid 1px;
+    border-radius: 6px;
+    width: 80%;
+    margin: 15px;
+    margin-right: 15px;
+    padding: 5px;
+    background-color: rgb(204, 204, 204);
+}
+
+footer {
+    background-color: var(--base-color);
+    font-size: larger;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(239, 238, 238);
+}
+
+.llama1 {
+    display: flex;
+}
+
+.llama2 {
+    display: none;
+}
+
+.left {
+    display: none;
+}
+
+.right {
+    display: flex;
+}
+
+.container img{
+    width: 270px;
+    padding: 10px;
+}
+
+.form {
+    margin-left: 30px;
+    width: 90%;
+    min-width: 400px;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    margin: 5px;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="url"],
+.wf1 input[type="email"],
+.wf1 textarea,
+.wf1 select,
+.wf1 input[type="number"]{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 70%;
+    max-width: 400px;
+    appearance: none;
+    margin: 15px;
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+    border-radius: 6px;
+    background-color: #04b1eb;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 10px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input[type="submit"]:hover{
+    background-color: rgb(1, 175, 1);
+}
+
+.contact-us {
+    margin: 10px;
+    border: black solid 1px;
+    border-radius: 6px;
+    width: 70%;
+    padding: .5rem;
+}
